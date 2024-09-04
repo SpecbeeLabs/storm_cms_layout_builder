@@ -62,3 +62,45 @@ function storm_cms_layout_builder_preprocess_page(&$variables) {
     $variables['#attached']['library'][] =  'storm_cms_layout_builder/layout-builder';
   }
 }
+
+/**
+ * Implements hook_preprocess_layout().
+ */
+function storm_cms_layout_builder_preprocess_layout(&$variables) {
+  $classes = [];
+
+  $settings = $variables['settings']['storm_cms_layout_builder'];
+
+  if ($variables['settings']) {
+    if(isset($settings['section_background']) || isset($settings['padding']) || isset($settings['spacing']) || isset($settings['section_theme']['styles'])) {
+      // Merge all modifier classes.
+      $classes = array_merge($classes,
+        $settings['section_background'],
+        $settings['padding'],
+        $settings['spacing'],
+        $settings['section_theme']['styles']
+      );
+    }
+
+    // Set section attributes.
+    if (isset($settings['section_attributes'])) {
+      if (isset($settings['section_attributes']['id']) && $settings['section_attributes']['id'] !== '') {
+        $variables['attributes']['id'] = $settings['section_attributes']['id'];
+      }
+      if (isset($settings['section_attributes']['data']) && $settings['section_attributes']['data'] !== '') {
+        $data_attrs = $settings['section_attributes']['data'];
+        $data_attrs = preg_split('/\R/', $data_attrs);
+        foreach ($data_attrs as $data_attr) {
+          $data_attr = explode('|', $data_attr);
+          $variables['attributes'][$data_attr[0]] = $data_attr[1] ?? TRUE;
+        }
+      }
+    }
+    $classes = array_filter($classes, fn ($m) => $m != 'none');
+  }
+
+  foreach ($classes as $class) {
+    $variables['attributes']['class'][] = $class;
+  }
+
+}

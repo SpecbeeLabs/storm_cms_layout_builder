@@ -1,0 +1,18 @@
+background_colors: "bg-red|Red\r\nbg-green|Green\r\nbg-blue|Blue\r\nbg-yellow|Yellow\r\nbg-black|Black"
+padding: "spacing-small|Small\r\nspacing-large|Large\r\nspacing-medium|Medium\r\nspacing-xl|Extra large"
+margin: "margin-small|Small\r\nmargin-large|Large\r\nmargin-medium|Medium\r\nmargin-xl|Extra large"
+padding_top: "u-padding-top-s|Small\r\nu-padding-top-m|Medium\r\nu-padding-top-l|Large\r\nu-padding-top-xl|Extra Large"
+padding_bottom: "u-padding-bottom-s|Small\r\nu-padding-bottom-m|Medium\r\nu-padding-bottom-l|Large\r\nu-padding-bottom-xl|Extra Large"
+padding_left: "u-padding-left-s|Small\r\nu-padding-left-m|Medium\r\nu-padding-left-l|Large\r\nu-padding-left-xl|Extra Large"
+padding_right: "u-padding-right-s|Small\r\nu-padding-right-m|Medium\r\nu-padding-right-l|Large\r\nu-padding-right-xl|Extra Large"
+spacing_top: "spacing-top-s|Small\r\nspacing-top-m|Medium\r\nspacing-top-l|Large\r\nspacing-top-xl|Extra Large"
+spacing_bottom: "spacing-bottom-s|Small\r\nspacing-bottom-m|Medium\r\nspacing-bottom-l|Large\r\nspacing-bottom-xl|Extra Large"
+spacing_left: "spacing-left-s|Small\r\nspacing-left-m|Medium\r\nspacing-left-l|Large\r\nspacing-left-xl|Extra Large"
+spacing_right: "spacing-right-s|Small\r\nspacing-right-m|Medium\r\nspacing-right-l|Large\r\nspacing-right-xl|Extra Large"
+styles: "u-full-width|Full width"
+bg_show_config: 1
+padding_show_config: 1
+spacing_show_config: 1
+theme_show_config: 1
+enable_section_attributes: 1
+enable_title_attributes: 0

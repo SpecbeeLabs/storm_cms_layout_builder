@@ -7,3 +7,4 @@ dependencies:
   - drupal:layout_builder
   - layout_builder_browser:layout_builder_browser
   - layout_builder_modal:layout_builder_modal
+  - hook_event_dispatcher:core_event_dispatcher
