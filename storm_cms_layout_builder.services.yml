@@ -1,0 +1,5 @@
+services:
+  storm_cms_layout_builder.route_subscriber:
+    class: Drupal\storm_cms_layout_builder\EventSubscriber\StormLayoutBuilderRouteSubscriber
+    tags:
+      - { name: event_subscriber }

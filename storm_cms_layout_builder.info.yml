@@ -1,0 +1,9 @@
+name: "storm_cms_layout_builder"
+type: module
+description: "Enhances the Page builder experience for Storm CMS."
+package: Storm CMS
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:layout_builder
+  - layout_builder_browser:layout_builder_browser
+  - layout_builder_modal:layout_builder_modal

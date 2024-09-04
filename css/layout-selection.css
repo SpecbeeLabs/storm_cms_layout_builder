@@ -1,0 +1,37 @@
+.layout-selection {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+}
+
+.layout-selection > li {
+  flex: 0 0 calc(33% - 1rem - 1px);
+}
+
+.layout-selection > li > a {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+  transition: 0.25s all ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 0.1875rem;
+  background: #fff;
+  box-shadow: 0 0 0.125rem #f7f8f9;
+  font-weight: bold;
+}
+
+.layout-selection > li > a > .layout-icon {
+  margin-bottom: 1.25rem;
+}
+
+.layout-selection > li > a > .layout-icon rect {
+  fill: #353641;
+}

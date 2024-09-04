@@ -1,0 +1,47 @@
+.ui-dialog {
+  padding: 0;
+  border: 0 none !important;
+  border-radius: 0.1875rem;
+}
+
+.ui-dialog-titlebar {
+  padding: 0.75rem 1rem !important;
+  color: #fff;
+  border: 0 none;
+  background: #1b1b1d;
+  border-top-left-radius: 0.1875rem;
+  border-top-right-radius: 0.1875rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ui-dialog-title {
+  font-size: 18px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  right: 1rem;
+  border: 0 none;
+  background: transparent !important;
+}
+
+.ui-button .ui-icon {
+  transition: 0.25s all ease-in-out;
+  opacity: 1;
+  background: url("./icons/close.svg") no-repeat center center;
+  background-size: 1.5rem;
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+  opacity: 0.8;
+  background: url("./icons/close.svg") no-repeat center center;
+  background-size: 1.5rem;
+}
+
+.ui-widget-overlay {
+  opacity: 0.25;
+  background: #1b1b1d;
+}

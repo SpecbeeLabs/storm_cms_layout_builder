@@ -1,0 +1,14 @@
+form:
+  css:
+    theme:
+      css/form.css: {}
+browser:
+  css:
+    theme:
+      css/browser.css: {}
+      css/ui-dialog.css: {}
+      css/layout-selection.css: {}
+layout-builder:
+  css:
+    theme:
+      css/layout-builder.css: {}
