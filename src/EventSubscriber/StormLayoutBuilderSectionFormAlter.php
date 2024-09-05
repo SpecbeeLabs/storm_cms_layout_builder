@@ -242,7 +242,6 @@ class StormLayoutBuilderSectionFormAlter implements EventSubscriberInterface {
   public static function layoutBuilderSectionFormAlterValidate(array &$form, FormStateInterface $form_state) {
     $values = $form_state->getValues();
     if (isset($values['layout_settings']['section_attributes']['id']) && static::layoutBuilderAttributeValidation($values['layout_settings']['section_attributes']['id'])) {
-      \Drupal::
       $form_state->setError($form['layout_settings']['section_attributes']['id'], t('ID attribute must be valid for CSS.'));
     }
     if (isset($values['layout_settings']['section_attributes']['data'])) {
@@ -306,8 +305,6 @@ class StormLayoutBuilderSectionFormAlter implements EventSubscriberInterface {
    * Helper function to validate css attributes.
    */
   protected static function layoutBuilderAttributeValidation($value) {
-    \Drupal::logger("testing")->notice(print_r("Val: " . $value, TRUE));
-    \Drupal::logger("testing1")->notice(print_r("Val: " . Html::getId($value), TRUE));
     if ($value == Html::getId($value)) {
       return TRUE;
     }
