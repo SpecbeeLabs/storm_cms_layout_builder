@@ -3,3 +3,8 @@ services:
     class: Drupal\storm_cms_layout_builder\EventSubscriber\StormLayoutBuilderRouteSubscriber
     tags:
       - { name: event_subscriber }
+  storm_cms_layout_builder.hook_form_alter:
+    class: Drupal\storm_cms_layout_builder\EventSubscriber\StormLayoutBuilderSectionFormAlter
+    arguments: ['@config.factory', '@current_route_match', '@entity_type.manager']
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,20 @@
+{
+    "name": "specbee/storm_cms_layout_builder",
+    "description": "Adds extra configurations and options for Layout Builder sections",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/hook_event_dispatcher": "^4.0"
+    },
+    "prefer-stable": true,
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

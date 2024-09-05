@@ -1,0 +1,5 @@
+storm_cms_layout_builder.settings:
+  title: "Layout Builder Section Configurations"
+  description: "Administer Layout Builder Extras Section module."
+  route_name: storm_cms_layout_builder.page_builder.style_settings
+  parent: system.admin_config_content
