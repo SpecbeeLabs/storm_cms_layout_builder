@@ -69,7 +69,7 @@ function storm_cms_layout_builder_preprocess_page(&$variables) {
 function storm_cms_layout_builder_preprocess_layout(&$variables) {
   $classes = [];
 
-  $settings = $variables['settings']['storm_cms_layout_builder'];
+  $settings = $variables['settings']['storm_cms_layout_builder'] ?? '';
 
   if ($variables['settings']) {
     if(isset($settings['section_background']) || isset($settings['padding']) || isset($settings['spacing']) || isset($settings['section_theme']['styles'])) {
