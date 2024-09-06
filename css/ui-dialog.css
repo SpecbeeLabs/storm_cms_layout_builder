@@ -1,35 +1,44 @@
+:root {
+  --ui-dialog-titlebar-padding: 12px var(--padding-inline);
+  --ui-dialog-title-color: #f2f2f2;
+  --ui-dialog-titlebar-bg: #1b1b1b;
+  --ui-dialog-title-font-size: 20px;
+  --ui-dialog-overlay: var(--ui-dialog-titlebar-bg);
+  --ui-dialog-content-padding: var(--padding-block) var(--padding-inline);
+}
+
 .ui-dialog {
   padding: 0;
   border: 0 none !important;
-  border-radius: 0.1875rem;
+  border-radius: var(--item-border-radius);
 }
 
 .ui-dialog-titlebar {
-  padding: 0.75rem 1rem !important;
-  color: #fff;
+  padding: var(--ui-dialog-titlebar-padding) !important;
+  color: var(--ui-dialog-title-color);
   border: 0 none;
-  background: #1b1b1d;
-  border-top-left-radius: 0.1875rem;
-  border-top-right-radius: 0.1875rem;
+  background: var(--ui-dialog-titlebar-bg);
+  border-top-left-radius: var(--item-border-radius);
+  border-top-right-radius: var(--item-border-radius);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .ui-dialog-title {
-  font-size: 18px;
+  font: var(--font-weight) var(--ui-dialog-title-font-size) var(--font-family);
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
-  right: 1rem;
+  right: var(--padding-inline);
   border: 0 none;
   background: transparent !important;
 }
 
 .ui-button .ui-icon {
-  transition: 0.25s all ease-in-out;
+  transition: var(--item-transition);
   opacity: 1;
   background: url("./icons/close.svg") no-repeat center center;
-  background-size: 1.5rem;
+  background-size: 32px;
 }
 
 .ui-state-hover .ui-icon,
@@ -38,10 +47,14 @@
 .ui-button:focus .ui-icon {
   opacity: 0.8;
   background: url("./icons/close.svg") no-repeat center center;
-  background-size: 1.5rem;
+  background-size: 32px;
 }
 
 .ui-widget-overlay {
   opacity: 0.25;
-  background: #1b1b1d;
+  background: var(--ui-dialog-overlay);
+}
+
+.ui-dialog .ui-dialog-content {
+  padding: var(--ui-dialog-content-padding);
 }

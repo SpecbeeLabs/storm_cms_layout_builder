@@ -1,13 +1,21 @@
+:root {
+  --padding-block: 20px;
+  --padding-inline: var(--padding-block);
+  --layout-item-padding: 15px;
+  --layout-icon-spacing: 20px;
+  --layout-icon-fill: #353641;
+}
 .layout-selection {
   display: flex;
-  gap: 1rem;
+  gap: var(--item-padding);
   list-style: none;
   flex-wrap: wrap;
-  padding: 1.25rem;
+  margin: 0;
+  padding: 0;
 }
 
 .layout-selection > li {
-  flex: 0 0 calc(33% - 1rem - 1px);
+  flex: 0 0 19.286%;
 }
 
 .layout-selection > li > a {
@@ -16,22 +24,23 @@
   flex-shrink: 1;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   width: 100%;
-  padding: 1.5rem;
-  transition: 0.25s all ease-in-out;
+  padding: var(--layout-item-padding);
+  transition: var(--item-transition);
   text-align: center;
   text-decoration: none;
-  border: 1px solid #ccc;
-  border-radius: 0.1875rem;
-  background: #fff;
-  box-shadow: 0 0 0.125rem #f7f8f9;
-  font-weight: bold;
+  border: var(--item-border);
+  border-radius: var(--item-border-radius);
+  background: var(--item-background);
+  box-shadow: var(--item-box-shadow);
+  font: var(--font-weight) var(--font-size) var(--font-family);
 }
 
 .layout-selection > li > a > .layout-icon {
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--layout-icon-spacing);
 }
 
 .layout-selection > li > a > .layout-icon rect {
-  fill: #353641;
+  fill: var(--layout-icon-fill);
 }

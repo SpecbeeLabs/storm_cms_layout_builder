@@ -6,8 +6,8 @@ browser:
   css:
     theme:
       css/browser.css: {}
-      css/ui-dialog.css: {}
       css/layout-selection.css: {}
+      css/ui-dialog.css: {}
 layout-builder:
   css:
     theme:

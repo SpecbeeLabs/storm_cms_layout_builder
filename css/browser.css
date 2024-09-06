@@ -1,3 +1,24 @@
+:root {
+  --font-weight: 800;
+  --font-size: 16px;
+  --font-family: system-ui,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen-Sans",
+    "Ubuntu",
+    "Cantarell",
+    "Helvetica Neue",
+    sans-serif;
+  --border-color: #cccccc;
+  --item-padding: 10px;
+  --item-transition: 0.25s all ease-in-out;
+  --item-border: 1px solid var(--border-color);
+  --item-border-radius: 5px;
+  --item-background: #ffffff;
+  --item-background-hover: #f7f8f9;
+  --item-box-shadow: 0 0 0.125rem #f7f8f9;
+}
+
 .layout-builder-browser-block-item {
   display: inline-flex;
   align-items: center;
@@ -6,29 +27,31 @@
 }
 
 .layout-builder-browser-block-item > .js-layout-builder-block-link {
+  font: var(--font-weight) var(--font-size) var(--font-family);
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0.5rem;
-  transition: 0.25s all ease-in-out;
+  padding: var(--item-padding);
+  transition: var(--item-transition);
   text-align: center;
   text-decoration: none;
-  border: 1px solid #ccc;
-  border-radius: 0.1875rem;
-  background: #fff;
-  box-shadow: 0 0 0.125rem #f7f8f9;
+  border: var(--item-border);
+  border-radius: var(--item-border-radius);
+  background: var(--item-background);
+  box-shadow: var(--item-box-shadow);
   font-weight: bold;
 }
 
 .layout-builder-browser-block-item > .js-layout-builder-block-link:hover,
 .layout-builder-browser-block-item > .js-layout-builder-block-link:focus {
-  background: #f7f8f9;
+  background: var(--item-background-hover);
 }
 
 .layout-builder-browser-block-item img {
-  margin-bottom: 0.75rem;
-  border-radius: 0.1875rem;
+  margin-bottom: var(--item-padding);
+  border-radius: var(--item-border-radius);
+  width: 100%;
 }
