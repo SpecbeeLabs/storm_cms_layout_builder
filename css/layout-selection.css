@@ -5,20 +5,21 @@
   --layout-icon-spacing: 20px;
   --layout-icon-fill: #353641;
 }
+
 .layout-selection {
   display: flex;
-  gap: var(--item-padding);
-  list-style: none;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style: none;
+  gap: var(--item-padding);
 }
 
-.layout-selection > li {
+.layout-selection>li {
   flex: 0 0 19.286%;
 }
 
-.layout-selection > li > a {
+.layout-selection>li>a {
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
@@ -37,10 +38,10 @@
   font: var(--font-weight) var(--font-size) var(--font-family);
 }
 
-.layout-selection > li > a > .layout-icon {
+.layout-selection>li>a>.layout-icon {
   margin-bottom: var(--layout-icon-spacing);
 }
 
-.layout-selection > li > a > .layout-icon rect {
+.layout-selection>li>a>.layout-icon rect {
   fill: var(--layout-icon-fill);
 }
