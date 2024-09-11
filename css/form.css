@@ -1,14 +1,27 @@
 :root {
-  --background-color: #f2f2f2;
+  --primary: #003ecc;
+  --light: #f2f2f2;
+  --background-color: var(--light);
   --padding-block: 12px;
   --padding-inline: 20px;
-  --border: 1px solid #c2c2c2;
+  --border: 1px solid var(--primary);
   --gutter: 16px;
+  --button-padding: 12px;
+  --font-family: system-ui,
+      "Segoe UI",
+      "Roboto",
+      "Oxygen-Sans",
+      "Ubuntu",
+      "Cantarell",
+      "Helvetica Neue",
+      sans-serif;
+  --font-size: 14px;
+  --font-weight: 600;
 }
 
 .storm-cms-layout-builder-form-actions {
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   bottom: 0;
   left: 0;
   display: flex;
@@ -20,4 +33,19 @@
   border-top: var(--border);
   background: var(--background-color);
   gap: var(--gutter);
+}
+
+.form-submit {
+  padding: var(--button-padding) !important;
+  background-color: var(--primary) !important;
+  font: var(--font-weight) var(--font-size) var(--font-family) !important;
+  border: none !important;
+  color: var(--light) !important;
+  margin: 0 !important;
+  height: unset !important;
+}
+
+.form-item {
+  margin: 0 !important;
+  font: var(--font-weight) var(--font-size) var(--font-family) !important;
 }

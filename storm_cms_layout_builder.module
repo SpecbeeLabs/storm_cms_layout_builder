@@ -17,6 +17,7 @@ function storm_cms_layout_builder_form_node_layout_builder_form_alter(&$form, Fo
   unset($form['revision_information']);
   $form['actions']['#weight'] = 200;
   $form['actions']['#attributes']['class'][] = 'storm-cms-layout-builder-form-actions';
+  $form['actions']['preview_toggle']['#weight'] = -1;
   $form['revision']['#access'] = FALSE;
   $form['moderation_state']['#access'] = FALSE;
 }
