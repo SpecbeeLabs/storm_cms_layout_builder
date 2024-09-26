@@ -48,7 +48,7 @@
 }
 
 .storm-cms-layout-builder-form-actions .form-item {
-  height: unset !important;
+  min-height: unset !important;
   margin: 0 !important;
   font: var(--font-weight) var(--font-size) var(--font-family) !important;
 }
