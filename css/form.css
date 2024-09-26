@@ -6,7 +6,7 @@
   --padding-inline: 20px;
   --border: 1px solid var(--primary);
   --gutter: 16px;
-  --button-padding: 12px;
+  --button-padding: 12px 25px;
   --font-family:
     system-ui,
     "Segoe UI",
@@ -37,7 +37,7 @@
   gap: var(--gutter);
 }
 
-.form-submit {
+.storm-cms-layout-builder-form-actions .form-submit {
   height: unset !important;
   margin: 0 !important;
   padding: var(--button-padding) !important;
@@ -47,7 +47,8 @@
   font: var(--font-weight) var(--font-size) var(--font-family) !important;
 }
 
-.form-item {
+.storm-cms-layout-builder-form-actions .form-item {
+  height: unset !important;
   margin: 0 !important;
   font: var(--font-weight) var(--font-size) var(--font-family) !important;
 }
